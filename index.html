@@ -10,7 +10,36 @@
     <h1 class="offscreen">Search On Wikimedia</h1>
     <section class="searchEntry">
       <h2 class="offscreen">Search Term Entry</h2>
+      <div class="logo" aria-hidden="true">SearchWIKI</div>
+      <form id="searchBar" class="searchBar">
+        <label for="search" class="offscreen">Enter a search terms</label>
+        <input type="text" id="search" autocomplete="off">
+        <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">X</div>
+        <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button">Search</button>
+      </form>
+    </section>
+    <section class="results">
+      <h2 class="offscreen">Search Results</h2>
+      <div class="stats" id="stats" aria-live="assertive"></div>
+      <div class="searchResults" id="searchResults">
+        <div class="resultItem">
+          <div class="resultTitle">
+            <a href="">Man United</a>
+          </div>
+          <div class="resultContents">
+            <div class="resultImage">
+              <img src="https://static.toiimg.com/photo/55979832.cms" alt="ManUnited">
+            </div>
+            <div class="resultText">
+              <p class="resultDescription">The best Football club in the world</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+  <footer>
+    <p>Powered by <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></p>
+  </footer>
 </body>
 </html>
