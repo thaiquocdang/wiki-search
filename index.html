@@ -36,12 +36,14 @@
         <label for="search" class="offscreen">Enter a search terms</label>
         <input type="text" id="search" autocomplete="off">
         <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms"><i class="fas fa-times"></i></div>
-        <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button"><i class="fas fa-search"></i></button>
+        <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button"><i class="fas fa-search blue"></i></button>
       </form>
     </section>
     <section class="results">
       <h2 class="offscreen">Search Results</h2>
-      <div class="stats" id="stats" aria-live="assertive"></div>
+      <div class="statsBar">
+        <div class="stats" id="stats" aria-live="assertive">Stats bar will be deleted</div>
+      </div>
       <div class="searchResults" id="searchResults">
         <div class="resultItem">
           <div class="resultTitle">
