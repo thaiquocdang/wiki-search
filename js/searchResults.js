@@ -1,7 +1,8 @@
 export const deleteSearchResults = () => {
   const parentEle = document.getElementById('searchResults')
   let child = parentEle.lastElementChild
-  if (child) {
+  console.log(child)
+  while (child) {
     parentEle.removeChild(child)
     child = parentEle.lastElementChild
   }

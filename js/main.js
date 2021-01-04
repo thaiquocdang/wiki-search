@@ -52,7 +52,7 @@ const submitTheSearch = (event) => {
 //Procedural
 const processTheSearch = async () => {
   //clear the stats line
-  clearStatsLine
+  clearStatsLine()
   const searchTerm = getSearchTerm()
   if (searchTerm === '') return //if searchTerm empty
 
